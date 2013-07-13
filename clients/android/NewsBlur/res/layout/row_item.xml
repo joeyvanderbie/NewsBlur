@@ -18,27 +18,30 @@
             android:id="@+id/row_item_favicon_borderbar_2"
             android:layout_width="8dp"
             android:layout_height="match_parent"
-            android:layout_toRightOf="@id/row_item_favicon_borderbar_1" />
+            android:layout_toRightOf="@id/row_item_favicon_borderbar_1" 
+            />
 
         <TextView
             android:id="@+id/row_item_sidebar"
-            android:layout_width="10dp"
+            android:layout_width="1dp"
             android:layout_height="10dp"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_toRightOf="@id/row_item_favicon_borderbar_2" />
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_toRightOf="@id/row_item_favicon_borderbar_2"
+            android:visibility="invisible" />
 
         <TextView
             android:id="@+id/row_item_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="8dp"
+            android:layout_marginRight="5dp"
             android:layout_toRightOf="@id/row_item_sidebar"
-            android:paddingBottom="12dp"
-            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
             android:textColor="@color/darkgray"
-            android:textSize="14sp" />
+            android:textSize="14sp" 
+            android:text="Artikel naam" />
 
         <TextView
             android:id="@+id/row_item_date"
@@ -46,23 +49,25 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/row_item_title"
-            android:layout_marginRight="8dp"
-            android:paddingBottom="12dp"
+            android:layout_marginRight="5dp"
+            android:paddingBottom="5dp"
             android:textColor="@color/darkgray"
-            android:textSize="11dp" />
+            android:textSize="8sp" 
+            android:text="2013-07-09"/>
 
         <TextView
             android:id="@+id/row_item_author"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/row_item_title"
-            android:paddingBottom="12dp"
+            android:layout_below="@+id/row_item_date"
+            android:paddingBottom="5dp"
             android:layout_toLeftOf="@id/row_item_date"
             android:layout_toRightOf="@id/row_item_sidebar"
             android:ellipsize="end"
             android:singleLine="true"
             android:textColor="@color/darkgray"
-            android:textSize="11dp" />
+            android:textSize="11sp"
+            android:text="Joey van der Bie" />
     </RelativeLayout>
 
 </LinearLayout>

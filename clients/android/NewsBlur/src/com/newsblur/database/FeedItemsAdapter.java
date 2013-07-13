@@ -7,10 +7,12 @@ import android.content.Context;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.opengl.Visibility;
 import android.support.v4.widget.SimpleCursorAdapter;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.newsblur.R;
@@ -59,13 +61,17 @@ public class FeedItemsAdapter extends SimpleCursorAdapter implements StoryItemsA
 			borderOne.setBackgroundColor(Color.GRAY);
 			borderTwo.setBackgroundColor(Color.LTGRAY);
 		}
+		
+
+		((ImageView) v.findViewById(R.id.row_item_feedicon)).setVisibility(ImageView.GONE);
+		((TextView) v.findViewById(R.id.row_item_feedtitle)).setVisibility(TextView.GONE);
 
 		if (! Story.fromCursor(cursor).read) {
 			((TextView) v.findViewById(R.id.row_item_author)).setTextColor(storyAuthorUnread);
 			((TextView) v.findViewById(R.id.row_item_date)).setTextColor(storyDateUnread);
 			
 			((TextView) v.findViewById(R.id.row_item_date)).setTypeface(null, Typeface.NORMAL);
-			((TextView) v.findViewById(R.id.row_item_author)).setTypeface(null, Typeface.BOLD);
+			((TextView) v.findViewById(R.id.row_item_author)).setTypeface(null, Typeface.NORMAL);
 			((TextView) v.findViewById(R.id.row_item_title)).setTypeface(null, Typeface.BOLD);
 			
 			borderOne.getBackground().setAlpha(255);

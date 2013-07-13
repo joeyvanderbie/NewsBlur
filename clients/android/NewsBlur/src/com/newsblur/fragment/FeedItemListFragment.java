@@ -92,7 +92,7 @@ public class FeedItemListFragment extends StoryItemListFragment implements Loade
 
 		getLoaderManager().initLoader(ITEMLIST_LOADER , null, this);
 
-		adapter = new FeedItemsAdapter(getActivity(), feed, R.layout.row_item, cursor, groupFrom, groupTo, CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
+		adapter = new FeedItemsAdapter(getActivity(), feed, R.layout.row_folderitem, cursor, groupFrom, groupTo, CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
 
 		itemList.setOnScrollListener(this);
 

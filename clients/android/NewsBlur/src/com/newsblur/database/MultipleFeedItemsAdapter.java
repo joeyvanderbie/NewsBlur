@@ -85,9 +85,6 @@ public class MultipleFeedItemsAdapter extends SimpleCursorAdapter implements Sto
 			((TextView) v.findViewById(R.id.row_item_feedtitle)).setTextColor(storyFeedUnread);
 			((TextView) v.findViewById(R.id.row_item_title)).setTextColor(storyTitleUnread);
 			
-			((TextView) v.findViewById(R.id.row_item_feedtitle)).setTypeface(null, Typeface.BOLD);
-			((TextView) v.findViewById(R.id.row_item_date)).setTypeface(null, Typeface.BOLD);
-			((TextView) v.findViewById(R.id.row_item_author)).setTypeface(null, Typeface.BOLD);
 			((TextView) v.findViewById(R.id.row_item_title)).setTypeface(null, Typeface.BOLD);
 
 			((ImageView) v.findViewById(R.id.row_item_feedicon)).setAlpha(255);
@@ -99,9 +96,6 @@ public class MultipleFeedItemsAdapter extends SimpleCursorAdapter implements Sto
 			((TextView) v.findViewById(R.id.row_item_feedtitle)).setTextColor(storyFeedRead);
 			((TextView) v.findViewById(R.id.row_item_title)).setTextColor(storyTitleRead);
 			
-			((TextView) v.findViewById(R.id.row_item_feedtitle)).setTypeface(null, Typeface.NORMAL);
-			((TextView) v.findViewById(R.id.row_item_date)).setTypeface(null, Typeface.NORMAL);
-			((TextView) v.findViewById(R.id.row_item_author)).setTypeface(null, Typeface.NORMAL);
 			((TextView) v.findViewById(R.id.row_item_title)).setTypeface(null, Typeface.NORMAL);
 
 			((ImageView) v.findViewById(R.id.row_item_feedicon)).setAlpha(125);

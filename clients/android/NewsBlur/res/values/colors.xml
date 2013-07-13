@@ -17,11 +17,11 @@
     
     <color name="story_title_unread">#101010</color>
     <color name="story_title_read">#959595</color>
-    <color name="story_feed_unread">#606060</color>
+    <color name="story_feed_unread">#707070</color>
     <color name="story_feed_read">#959595</color>
-    <color name="story_author_unread">#606060</color>
+    <color name="story_author_unread">#707070</color>
     <color name="story_author_read">#959595</color>
-    <color name="story_date_unread">#606060</color>
+    <color name="story_date_unread">#707070</color>
     <color name="story_date_read">#959595</color>
     
     <color name="twitter_blue">#4099FF</color>

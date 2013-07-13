@@ -70,8 +70,6 @@ public class FeedItemsAdapter extends SimpleCursorAdapter implements StoryItemsA
 			((TextView) v.findViewById(R.id.row_item_author)).setTextColor(storyAuthorUnread);
 			((TextView) v.findViewById(R.id.row_item_date)).setTextColor(storyDateUnread);
 			
-			((TextView) v.findViewById(R.id.row_item_date)).setTypeface(null, Typeface.NORMAL);
-			((TextView) v.findViewById(R.id.row_item_author)).setTypeface(null, Typeface.NORMAL);
 			((TextView) v.findViewById(R.id.row_item_title)).setTypeface(null, Typeface.BOLD);
 			
 			borderOne.getBackground().setAlpha(255);
@@ -80,8 +78,6 @@ public class FeedItemsAdapter extends SimpleCursorAdapter implements StoryItemsA
 			((TextView) v.findViewById(R.id.row_item_author)).setTextColor(storyAuthorRead);
 			((TextView) v.findViewById(R.id.row_item_date)).setTextColor(storyDateRead);
 			
-			((TextView) v.findViewById(R.id.row_item_date)).setTypeface(null, Typeface.NORMAL);
-			((TextView) v.findViewById(R.id.row_item_author)).setTypeface(null, Typeface.NORMAL);
 			((TextView) v.findViewById(R.id.row_item_title)).setTypeface(null, Typeface.NORMAL);
 			borderOne.getBackground().setAlpha(125);
 			borderTwo.getBackground().setAlpha(125);

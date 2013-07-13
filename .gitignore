@@ -49,13 +49,39 @@ vendor/mms-agent/settings.py
 *.class
 
 # generated files
-media/android/NewsBlur/bin/
-media/android/NewsBlur/gen/
-media/android/NewsBlurTest/bin/
-media/android/NewsBlurTest/gen/
+clients/android/NewsBlur/bin/
+clients/android/NewsBlur/gen/
+clients/android/NewsBlurTest/bin/
+clients/android/NewsBlurTest/gen/
+clients/android/NewsBlur/libs/ActionBarSherlock/
 
 # Local configuration file (sdk path, etc)
-media/android/NewsBlur/local.properties
-media/android/NewsBlurTest/local.properties
+clients/android/NewsBlur/local.properties
+clients/android/NewsBlurTest/local.properties
 originals
 media/safari/NewsBlur.safariextz
+
+
+clients/android/NewsBlur/libs/ActionBarSherlock/bin/jarlist.cache
+
+clients/android/NewsBlur/libs/ActionBarSherlock/project.properties
+
+clients/android/NewsBlur/libs/ActionBarSherlock/bin/actionbarsherlock.jar
+
+clients/android/NewsBlur/libs/ActionBarSherlock/.classpath
+
+clients/android/NewsBlur/libs/ActionBarSherlock/.classpath
+
+clients/android/NewsBlur/.classpath
+
+clients/android/NewsBlurTest/.classpath
+
+clients/android/NewsBlurTest/.classpath
+
+clients/android/NewsBlur/project.properties
+
+clients/android/NewsBlur/project.properties
+
+clients/android/NewsBlurTest/src/com/newsblur/test/database/FolderProviderTest.java
+
+clients/android/NewsBlurTest/src/com/newsblur/test/database/FolderProviderTest.java

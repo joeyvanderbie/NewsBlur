@@ -6,6 +6,7 @@ import android.preference.PreferenceManager;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentManager;
 import android.util.Log;
+import android.view.View;
 
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.view.Menu;
@@ -73,6 +74,7 @@ public class Main extends NbFragmentActivity implements StateChangedListener, Sy
 		setSupportProgressBarIndeterminateVisibility(true);
 		if (menu != null) {
 			menu.findItem(R.id.menu_refresh).setEnabled(false);
+			menu.findItem(R.id.menu_refresh).setVisible(false);
 		}
 		
 		final Intent intent = new Intent(Intent.ACTION_SYNC, null, this, SyncService.class);
@@ -89,6 +91,7 @@ public class Main extends NbFragmentActivity implements StateChangedListener, Sy
 		setSupportProgressBarIndeterminateVisibility(true);
 		if (menu != null) {
 			menu.findItem(R.id.menu_refresh).setEnabled(false);
+			menu.findItem(R.id.menu_refresh).setVisible(false);
 		}
 
 		final Intent intent = new Intent(Intent.ACTION_SYNC, null, this, SyncService.class);
@@ -155,6 +158,7 @@ public class Main extends NbFragmentActivity implements StateChangedListener, Sy
 		folderFeedList.hasUpdated();
 		setSupportProgressBarIndeterminateVisibility(false);
 		menu.findItem(R.id.menu_refresh).setEnabled(true);
+		menu.findItem(R.id.menu_refresh).setVisible(true);
 	}
 
     /**
@@ -173,7 +177,8 @@ public class Main extends NbFragmentActivity implements StateChangedListener, Sy
 		if (syncRunning) {
 			setSupportProgressBarIndeterminateVisibility(true);
 			if (menu != null) {
-				menu.findItem(R.id.menu_refresh).setEnabled(true);
+				menu.findItem(R.id.menu_refresh).setEnabled(false);
+				menu.findItem(R.id.menu_refresh).setVisible(false);
 			}
 		}
 	}

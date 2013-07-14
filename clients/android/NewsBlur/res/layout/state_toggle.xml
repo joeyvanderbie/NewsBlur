@@ -20,7 +20,7 @@
             android:layout_weight="1"
             android:paddingLeft="15dp"
             android:paddingRight="5dp"
-            android:text="ALL"
+            android:text="@string/all_stories"
             android:textColor="@color/button_state_text_selector"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -38,7 +38,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="15dp"
                 android:paddingRight="5dp"
-                android:src="@drawable/g_icn_unread" />
+                android:src="@drawable/g_icn_unread"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/toggle_some"
@@ -46,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:enabled="false"
-                android:text="UNREAD"
+                android:text="@string/unread_only"
                 android:textColor="@color/button_state_text_selector"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -65,14 +66,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="15dp"
                 android:paddingRight="5dp"
-                android:src="@drawable/g_icn_focus" />
+                android:src="@drawable/g_icn_focus"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/toggle_focus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="FOCUS"
+                android:text="@string/focus_only"
                 android:textColor="@color/button_state_text_selector"
                 android:textSize="20sp"
                 android:textStyle="bold" />
